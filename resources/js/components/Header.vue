@@ -1,8 +1,11 @@
 <template>
+  <head>
+    <meta charset="UTF-8">
+  </head>
     <header>
-      <img src="/logo.png">
+      <a href="/"><img src="/img/logo.png"></a>
       <div>
-        <a href=""><h1>О нас</h1></a>
+        <a href="/"><h1>О нас</h1></a>
         <a href=""><h1>Каталог</h1></a>
         <a href=""><h1>Где нас найти?</h1></a>
       </div>
@@ -12,29 +15,33 @@
 
 <script>
     export default {
-        name: "main"
+        name: "AboutHeader"
     }
 </script>
 <style scoped>
 *{
-  font-family: 'font-falling';
+  font-family: 'font-falling', Arial;
   font-weight: 600;
+  align-self: center;
 }
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 a{
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 header {
-  padding: 15px 75px;
-  height: 7.75vh;
+  padding: 0 75px;
+  height: 14vh;
   display: inline-flex;
   justify-content: space-between;
-  width: 90%;
+  width: 99%;
+}
+header img{
+  height: 100.65px;
+  width: 161px;
 }
 header div{
     display: flex;

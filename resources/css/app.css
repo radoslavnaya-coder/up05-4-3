@@ -3,3 +3,12 @@
     src: local('fonts'),
     url('../../public/fonts/FallingSkyOblique-n5XV.otf') format('truetype');
 }
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}

@@ -12,11 +12,8 @@ import { createApp } from 'vue';
  * registering components with the application instance so they are ready
  * to use in your application's views. An example is included for you.
  */
-
-const app = createApp({});
-
-import main from './components/Main.vue';
-createApp(main).mount("#app");
+import About from './About.vue';
+createApp(About).mount("#app");
 
 /**
  * The following block of code may be used to automatically register your
@@ -36,4 +33,4 @@ createApp(main).mount("#app");
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+
