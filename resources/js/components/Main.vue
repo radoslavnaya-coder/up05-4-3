@@ -16,15 +16,14 @@
     }
 </script>
 <style scoped>
-@font-face{
-    font-family: 'font-mukta';
-    src: url('/public/fonts/EkMuktaRegular-mOLv.ttf') format('ttf');
+*{
+  font-family: 'font-falling';
+  font-weight: 600;
 }
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-
 }
 a{
     color: black;
@@ -53,5 +52,6 @@ header button{
     border-radius: 3px;
     border: none;
     font-size: 19px;
+    font-weight: 400;
 }
 </style>
