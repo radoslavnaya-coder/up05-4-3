@@ -14,7 +14,10 @@ import { createApp } from 'vue';
  */
 import About from './About.vue';
 createApp(About).mount("#app");
-
+import Catalog from './Catalog.vue';
+createApp(Catalog).mount("#catalog");
+import Place from './Place.vue';
+createApp(Place).mount('#place');
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

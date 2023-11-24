@@ -1,7 +1,7 @@
 @font-face{
     font-family: 'font-falling';
     src: local('fonts'),
-    url('../../public/fonts/FallingSkyOblique-n5XV.otf') format('truetype');
+    url('/../../public/fonts/FallingSkyOblique-n5XV.otf') format('truetype');
 }
 *,
 *::before,
@@ -12,3 +12,8 @@ body{
     margin: 0;
     padding: 0;
 }
+*{
+    font-family: 'font-falling', Arial;
+    font-weight: 400;
+    align-self: center;
+  }

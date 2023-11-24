@@ -6,10 +6,10 @@
       <a href="/"><img src="/img/logo.png"></a>
       <div>
         <a href="/"><h1>О нас</h1></a>
-        <a href=""><h1>Каталог</h1></a>
-        <a href=""><h1>Где нас найти?</h1></a>
+        <a href="/catalog"><h1>Каталог</h1></a>
+        <a href="/place"><h1>Где нас найти?</h1></a>
       </div>
-        <button>Войти</button>
+        <a href="/login"><button>Войти</button></a>
     </header>
 </template>
 
@@ -60,5 +60,6 @@ header button{
     border: none;
     font-size: 19px;
     font-weight: 400;
+    cursor: pointer;
 }
 </style>

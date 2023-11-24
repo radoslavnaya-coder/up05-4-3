@@ -2,12 +2,35 @@
     <main>
         <img src="/img/aboutBanner.png" />
         <p>Новинки</p>
-            <swiper :navigation="true" :modules="modules" class="mySwiper">
-                <swiper-slide><img src="/img/items/01.jpg"><p>Название</p><p>4000 P.</p></swiper-slide>
-                <swiper-slide><img src="/img/items/02.jpg"><p>Название</p><p>4000 P.</p></swiper-slide>
-                <swiper-slide><img src="/img/items/03.jpg"><p>Название</p><p>4000 P.</p></swiper-slide>
-                <swiper-slide><img src="/img/items/04.jpg"><p>Название</p><p>4000 P.</p></swiper-slide>
-                <swiper-slide><img src="/img/items/05.jpg"><p>Название</p><p>4000 P.</p></swiper-slide>
+            <swiper :autoplay="{
+      delay: 2000,
+      disableOnInteraction: false,
+    }" :navigation="false" :modules="modules" class="mySwiper">
+                <swiper-slide>
+                    <img src="/img/items/01.jpg">
+                    <p>Название</p>
+                    <p>4000 P.</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="/img/items/02.jpg">
+                    <p>Название</p>
+                    <p>4000 P.</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="/img/items/03.jpg">
+                    <p>Название</p>
+                    <p>4000 P.</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="/img/items/04.jpg">
+                    <p>Название</p>
+                    <p>4000 P.</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="/img/items/05.jpg">
+                    <p>Название</p>
+                    <p>4000 P.</p>
+                </swiper-slide>
             </swiper>
     </main>
 </template>
@@ -20,7 +43,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 export default {
     name: "AboutBody",
@@ -30,7 +53,7 @@ export default {
     },
     setup() {
         return {
-            modules: [Navigation],
+            modules: [Navigation, Autoplay],
         };
     },
 };
@@ -46,26 +69,28 @@ main p {
 }
 /* slider */
 .swiper {
-    width: 60%;
+    width: 25%;
     height: 60%;
-}
-.swiper *{
-    display: block;
 }
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     /* Center slide text vertically */
-    display: flex;
+    display: block;
     justify-content: center;
+    background: #2F2A2A;
     align-items: center;
     padding: 2vh 2vw;
+    height: 45vh;
+    color: white;
+    border-radius: 10px;
 }
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    background: white;
+    padding: 2vh 2vw;
     object-fit: cover;
+    border-radius: 3px;
 }
 /* end slider */
 </style>
