@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+form{
+    text-align: center;
+}
+img{
+   margin-top: 20vh;
+}
+p{
+    margin: 1vh 0;
+    padding: 0;
+}
+input[type=text]{
+    width: 20vw;
+    height: 3vh;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+input:focus, input:active{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+button{
+    width: 20vw;
+    height: 5vh;
+    background: #2F2A2A;
+    color: white;
+    font-size: 19px;
+    border-radius: 3px;
+}
