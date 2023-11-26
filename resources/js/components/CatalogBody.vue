@@ -3,17 +3,16 @@
         <div>
         <select id="sorter">
             <option value="1" selected="selected">Упорядочить</option>
-            <option value="1">4</option>
-            <option value="1">3</option>
-            <option value="1">2</option>
-            <option value="1">1</option>
+            <option value="1">Год производства</option>
+            <option value="1">Наименование</option>
+            <option value="1">Цена</option>
         </select>
         <select style="margin-left: 2vw;" id="category">
             <option value="1" selected="selected">Категория</option>
-            <option value="1">2</option>
-            <option value="1">4</option>
-            <option value="1">5</option>
-            <option value="1">8</option>
+            <option value="1">Лазерные принтеры</option>
+            <option value="1">Струйные принтеры</option>
+            <option value="1">Термопринтеры</option>
+            <option value="1">Расходники</option>
         </select>
         </div>
         <!-- Cardplace -->
