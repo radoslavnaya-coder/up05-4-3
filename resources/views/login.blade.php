@@ -9,14 +9,12 @@
 <body>
 
     <form action="">    
-        <img src="{{asset('img/biglogo.png')}}" alt="">
+        <a href="/"><img src="{{asset('img/biglogo.png')}}"></a>
         <p>Логин</p>
         <input type="text" id="login">
         <br>
         <p>Пароль</p>
         <input type="text">
-        <br>
-        <input type="checkbox" id="accept"><label for="accept" require>Даю <a href="">согласие</a> на обработку персональных данных</label>
         <br>
         <button>Войти</button>
         <p>Ещё не зарегистрированы? <a href="/register">Зарегистрироваться</a></p>
